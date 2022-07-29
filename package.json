@@ -1,0 +1,8 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ricardoferreirades/react-boilerplate.git",
+  "author": "Ricardo Ferreira <ricardoferreirades@gmail.com>",
+  "license": "MIT"
+}
