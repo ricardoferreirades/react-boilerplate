@@ -1,2 +1,4 @@
 import React from "react";
-export const App = () => <div>Hello, boilerplate</div>;
+import "./App.css";
+
+export const App = () => <div className="title">Hello, boilerplate</div>;
