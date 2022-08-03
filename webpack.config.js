@@ -32,5 +32,11 @@ module.exports = {
         use: ["file-loader"],
       },
     ],
+    performance: {
+      hints: false,
+    },
+    devServer: {
+      historyApiFallback: true,
+    },
   },
 };
