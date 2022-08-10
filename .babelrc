@@ -6,7 +6,8 @@
       {
         "pure": true,
         "transpileTemplateLiterals": true,
-        "namespace": "boilerplate"
+        "namespace": "boilerplate",
+        "meaninglessFileNames": ["index", "styles"]
       }
     ]
   ]
