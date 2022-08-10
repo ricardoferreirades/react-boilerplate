@@ -4,7 +4,7 @@ import { act } from "react-dom/test-utils";
 import App from "./App";
 
 describe("App Component", () => {
-  let container = null;
+  let container: any = null;
   beforeEach(() => {
     // setup a DOM element as a render target
     container = document.createElement("div");
