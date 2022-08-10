@@ -2,9 +2,10 @@ import React from "react";
 import { Title } from "./App.styles";
 
 function App() {
+  const greeting: string = "Hello, Ricardo Gostoso!";
   return (
     <>
-      <Title>Hello, Boilerplate!</Title>
+      <Title>{greeting}</Title>
     </>
   );
 }
