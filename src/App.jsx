@@ -1,8 +1,12 @@
 import React from "react";
-import "./App.css";
+import { Title } from "./App.styles";
 
-export const App = () => (
-  <>
-    <h1 className="title">Hello, boilerplate</h1>
-  </>
-);
+function App() {
+  return (
+    <>
+      <Title>Hello, Boilerplate!</Title>
+    </>
+  );
+}
+
+export default App;
