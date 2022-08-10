@@ -37,8 +37,13 @@ describe("App Component", () => {
     expect(container.textContent).toBe("Hello, Ricardo Gostoso, MARAVILHOSO!");
   });
 
-  it("works", () => {
-    const tree = renderer.create(<Button>Foo</Button>);
+  it("matches the snapshot", () => {
+    const tree = renderer.create(<Button>Foo</Button>).toJSON();
     expect(tree).toMatchSnapshot();
+  });
+
+  it("has the color pink", () => {
+    const tree = renderer.create(<Button>Foo</Button>).toJSON();
+    expect(tree).toHaveStyleRule("color", "green");
   });
 });
