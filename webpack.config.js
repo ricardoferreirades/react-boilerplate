@@ -12,7 +12,10 @@ module.exports = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: "./src/index.html",
+      filename: "index.html",
+      template: path.join(__dirname, "public", "index.html"),
+      title: "boilerplate",
+      publicPath: "/",
     }),
   ],
   resolve: {
@@ -56,6 +59,11 @@ module.exports = {
     hints: false,
   },
   devServer: {
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
     historyApiFallback: true,
+    port: 5000,
+    hot: true,
   },
 };
